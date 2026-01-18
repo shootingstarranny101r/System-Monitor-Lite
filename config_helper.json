@@ -1,0 +1,23 @@
+{
+  "project_name": "System-Monitor-Lite",
+  "version": "1.0.4",
+  "settings": {
+    "refresh_rate_ms": 500,
+    "enable_logs": true,
+    "log_path": "./logs/system.log",
+    "debug_mode": false,
+    "notifications": {
+      "email": false,
+      "desktop": true,
+      "alert_threshold_cpu": 85.0,
+      "alert_threshold_ram": 90.5
+    }
+  },
+  "modules": [
+    {"name": "CPU_Monitor", "active": true, "priority": "high"},
+    {"name": "RAM_Analyzer", "active": true, "priority": "medium"},
+    {"name": "Network_Traffic", "active": false, "priority": "low"}
+  ],
+  "author": "Thomas Anderson",
+  "license": "MIT"
+}
